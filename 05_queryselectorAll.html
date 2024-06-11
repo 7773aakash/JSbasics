@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>first li tag </li>
+        <li>second li tag</li>
+      </ul>
+      <ul>
+        <li>first li tag of second ul</li>
+        <li>second li tag of second ul</li>
+      </ul>
+      <script>
+        let elements = document.querySelectorAll('ul > li:first-child');
+                                                    //find ul parent and right side is direct child 
+        for (let elem of elements) {
+          alert(elem.innerHTML); 
+        }
+      </script>
+</body>
+</html>
