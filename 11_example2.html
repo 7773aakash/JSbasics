@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <ul>
+    <li>Electronics
+      <ul>
+        <li>Mobile Phones
+          <ul>
+            <li>iPhone</li>
+            <li>Samsung Galaxy</li>
+            <li>Google Pixel</li>
+          </ul>
+        </li>
+        <li>Computers
+          <ul>
+            <li>Laptops</li>
+            <li>Desktops</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Home Appliances
+      <ul>
+        <li>Kitchen
+          <ul>
+            <li>Refrigerators</li>
+            <li>Microwaves</li>
+          </ul>
+        </li>
+        <li>Cleaning
+          <ul>
+            <li>Vacuum Cleaners</li>
+            <li>Washing Machines</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    for (let li of document.querySelectorAll('li')) {  // first title is Animal and then count will count its child which contain li tag
+      // get the title from the text node
+      let title = li.firstChild.data;
+
+      title = title.trim(); // remove extra spaces from ends
+
+      // get the descendants count
+      let count = li.getElementsByTagName('li').length; // for a particular title it count its nested li tags
+
+      alert(title + ': ' + count);
+    }
+  </script>
+
+</body>
+</html>
