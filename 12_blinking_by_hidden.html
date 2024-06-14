@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Element Visibility Example</title>
+</head>
+<body>
+
+<div id="elem">A blinking element</div>
+
+<script>
+  // Select the element
+  const elem = document.getElementById('elem');
+
+  // Initialize a variable to track visibility
+  let isVisible = true;
+
+  // Set interval to toggle visibility every 1000ms (1 second) 
+  // This function executes every second due to setInterval.
+  setInterval(function() {
+    elem.hidden = isVisible;
+    isVisible = !isVisible;
+  }, 1000);
+</script>
+
+</body>
+</html>
