@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attribute vs Property Example</title>
+</head>
+<body>
+  <input id="myInput" value="initialValue">
+
+  <script>
+    // Select the input element
+    let input = document.getElementById('myInput');
+
+    // Synchronize attribute to property
+    input.setAttribute('id', 'newId');
+    alert(input.id); // Alert: newId (updated)
+    alert(input.getAttribute('id'));
+
+    // Synchronize property to attribute
+    input.value = 'newValue';
+    alert(input.getAttribute('value')); // Alert: initialVale (not updated)
+
+    // Example showing lack of synchronization when setting property
+    alert(input.value); // Alert: newValue (updated)
+
+//Important 
+// Attributes are part of the HTML and provide the initial configuration.
+
+// Properties are part of the DOM and represent the current state of the element.
+
+
+// The initial attribute values are used to set up the initial property values, but after the page has loaded, the attribute and property values can diverge.
+// Changing an Attribute: When you change an attribute (e.g., using setAttribute), it updates both the attribute and the corresponding property.
+// Changing a Property: When you change a property directly (e.g., input.value = 'newValue'), it does not update the corresponding attribute.
+  </script>
+</body>
+</html>

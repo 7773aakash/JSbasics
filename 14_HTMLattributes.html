@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="standard" something="non-standard">
+  <script>
+    alert(document.body.id); // standard
+
+    // non-standard attribute does not yield a property
+    alert(document.body.something); // undefined
+
+    // standard attributes for one element may not be standard for other.
+    // for example type attribute is standard for input but it not standard for body element
+    </script>
+</body>
+</html>

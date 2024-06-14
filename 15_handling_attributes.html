@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Operations</title>
+</head>
+<body>
+    <div id="animal" species="Lion"></div>
+
+    <script>
+        // (1) Reading an attribute here species is a non-standard attribute
+        alert( animal.getAttribute('species') ); // Output: Lion
+
+        // (2) Writing an attribute
+        animal.setAttribute('Fishes', 'star-fish'); // Adds a new attribute 
+
+        // (3) Checking if the attribute is in HTML
+        alert( animal.outerHTML ); // Displays the updated HTML of the <div>
+
+        // (4) Listing all attributes
+        for (let attr of animal.attributes) {
+            alert( `${attr.name} = ${attr.value}` );
+        }
+    </script>
+</body>
+</html>
