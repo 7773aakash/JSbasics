@@ -1,23 +1,27 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles\29_model.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/29_model.css">
 </head>
 <body>
 
-<h2>Modal Example</h2>
+<h2>Modal Carousel Example</h2>
 
 <button id="myBtn">Open Modal</button>
 
 <div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p><a href="29_carousel.html" style="text-decoration: none; color :black;">Open the Carousel</a></p>
-  </div>
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="carousel-container">
+            <img id="modalImage" class="carousel-image" src="img/city1.jpeg" alt="City Image 1">
+            <div id="imageCaption" class="caption">City Image 1</div>
+            <a class="prev" id="prev">&lt;</a>
+            <a class="next" id="next">&gt;</a>
+        </div>
+    </div>
 </div>
 
-<script src="js\29_modal.js"></script>
+<script src="js/29_modal.js"></script>
 </body>
 </html>

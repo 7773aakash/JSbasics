@@ -1,4 +1,6 @@
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .modal {
   display: none;
@@ -19,6 +21,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  position: relative;
 }
 
 .close {
@@ -26,11 +29,54 @@ body {font-family: Arial, Helvetica, sans-serif;}
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
   color: #000;
   text-decoration: none;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.carousel-image {
+  width: 100%;
+}
+
+.prev, .next {
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* .disabled {
+  opacity: 0.5;
+} */
+
+.caption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
 }
