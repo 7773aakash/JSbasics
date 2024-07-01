@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/30_fetch_practice.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Container for the avatar and login name -->
+        <div class="avatar-container"></div>
+
+        <!-- Container for the repository items -->
+        <div class="repos-container"></div>
+    </div>
+
+    <script>
+        // Fetch profile information
+        fetch("https://api.github.com/users/7773aakash")
+        .then(response => response.json())
+        .then(profileinfo => {
+            console.log(profileinfo);
+
+            let img = document.createElement("img");
+            img.src = profileinfo.avatar_url;
+            img.alt = profileinfo.login + " avatar";
+            img.classList.add("avatar-img");
+            document.querySelector(".avatar-container").appendChild(img);
+
+            let loginName = document.createElement("div");
+            loginName.textContent = profileinfo.login;
+            loginName.classList.add("login-name");
+            document.querySelector(".avatar-container").appendChild(loginName);
+
+            return profileinfo;
+        })
+        .then((profileinfo) => {
+            fetch(profileinfo.repos_url)
+            .then(response => response.json())
+            .then(repoinfo => {
+                repoinfo.forEach(repo => {
+                    console.log(repo.html_url);
+
+                    // Create repository item container
+                    let repoItem = document.createElement("div");
+                    repoItem.classList.add("repo-item");
+
+                    // Create repository item content
+                    let repoContent = `
+                        <div class="repo-content">
+                            <a href="${repo.html_url}" class="repo-link">
+                                <span class="repo-name">${repo.name}</span>
+                            </a>
+                            <span class="repo-public">Public</span>
+                        </div>
+                    `;
+
+                    repoItem.innerHTML = repoContent;
+                    document.querySelector(".repos-container").appendChild(repoItem);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
