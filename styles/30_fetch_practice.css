@@ -3,10 +3,18 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
-    overflow: auto;
+    overflow: scroll;
 }
 
 .container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.avatar-repo-combine {
     display: flex;
     width: 80%;
     height: 80%;
@@ -35,6 +43,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    justify-content: space-between;
     overflow-y: auto;
 }
 
@@ -46,6 +55,7 @@ body {
 
 .repo-item {
     flex: calc(50% - 20px);
+    max-width: calc(50% - 20px);
     margin: 10px;
 }
 
@@ -73,3 +83,108 @@ body {
     border-radius: 2px;
     font-size: 12px;
 }
+
+.about-activity {
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    margin:auto;
+}
+.date-flex{
+    display:flex;
+     width:100%;
+    align-items:center
+}
+.heading{
+    font-size: 16px;
+    color: #1f2328;
+    margin: 24px 0px 10px;
+}
+
+.date {
+    min-width: max-content;
+    color: #d0d7de;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+.month{
+    font-size: 12px;
+    color:#1f2328;
+}
+.year {
+    font-size: 12px;
+    padding-right: 16px;
+    color: #636c76
+    }
+.current-details{
+    display:flex;
+    position:relative;
+    padding:0px 0px 24px
+}
+.activity-details {
+    display: flex;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 0px 0px 0px 16px;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+.commit-bar{
+    display:flex;
+     min-width:max-content;
+     padding-left:16px;
+     align-items: center;
+     justify-content:space-between;
+}
+.Link {
+    font: 14px;
+    text-decoration:none;
+    padding-right: 10px
+}
+.link2{
+    color: #636c76;
+    font-size: 12px;
+    text-decoration:none;
+}
+.green-bar {
+    background-color: green;
+    width: 100px; 
+    height: 6px; 
+    border-radius: 6px;
+}
+.activity-details::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -8px;
+    height: 100%;
+    width: 1px;
+    background-color: grey;
+}
+.svg1{
+    background-color: lightgrey;
+    border-radius: 50%;
+    align-items: center;
+    position: absolute;
+    top:20px;
+    z-index: 1;
+}
+.more-activity{
+    display: flex;
+    width:100%;
+    margin:auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    justify-content:center;
+    align-items: center;
+}
+.button{
+    font-size: 12px;
+    padding:8px 6px;
+    color:#0969da;
+    width:max-content;
+    font-weight:bold;
+}
+    
