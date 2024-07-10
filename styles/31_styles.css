@@ -284,6 +284,9 @@ h6{
     
 
 }
+.review-box h6{
+    font-weight: 500;
+}
 .img-name{
     display: flex;
     gap:1rem;
@@ -293,5 +296,115 @@ h6{
     width: 3rem;
     border-radius: 9999px;
 }
+.get-start{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    margin-top: 3.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.start-content{
+    
+    width: 65%;
+    margin: auto;
+    /* padding-left: 1.5rem;
+    padding-right: 1.5rem; */
 
+}
+.imgs{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.shift{
+    margin: 0px 0px 0px -8px;
+}
+.inner-text1{
+    /* margin-top: 1.5rem; */
+    max-width: 58.33%;
 
+    margin: 1.5rem auto 0px;
+}
+.inner-text1 h1{
+    color:#1F2937;
+    font-size: 48px;
+    text-align:center;
+    line-height: 1;
+}
+.inner-text1 p{
+    color:  rgb(75 85 99);
+    text-align: center;
+    /* min-width: 1024px; */
+    margin-top: 1.25rem;
+    line-height: 1.75rem;
+    font-size: 1.15rem;
+}
+.slot-btn1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0px 0px;
+}
+.slot-btnA1{
+    background-color: #EEAA22;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    width: 200px;
+    height: 44px;
+    border-radius: 9999px;
+}
+.footer1{
+    background-color: #1C1C1C;
+
+}
+.footer-content{
+    max-width: 80rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inner{
+    display: flex;
+    column-gap: 2.5rem;
+    ;
+}
+.policy{
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    gap: .5rem;
+    margin-left: 1.25rem;
+    ;
+}
+.policy div a{
+    color:#FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
+    ;
+}
+.support{
+    display: flex;
+    flex: 1 1 0%;
+    column-gap: 1.5rem;
+    justify-content: space-evenly;
+}
+.anchors div{
+    margin: 8px 0px 0px;
+}
+.anchors a{
+    text-decoration:none; 
+    font-size: 14px;
+    color: #FFFFFF;
+}
