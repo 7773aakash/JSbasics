@@ -41,7 +41,34 @@ body {
     display: flex;
     gap: 2rem;  
 }
-/* .border-shadow{
+.border-shadow{
     border: 1px solid white;
     box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
-} */
+}
+.hover-flex{
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+.hover-flex:hover{
+    opacity: 1;
+}
+.lens-svg{
+    color: rgb(255,255,255);
+    width:1.25rem;
+    height:1.25rem;
+}
+.modal-container{
+    position: fixed;
+    display: none;
+    inset: 0px;
+    cursor: zoom-out;
+    background-color: rgba(0, 0, 0, 0.7);
+
+
+}
