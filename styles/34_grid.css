@@ -1,0 +1,26 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+    column-gap: 24px;
+    max-width: min-content;
+    margin: 3rem auto;
+
+}
+
+.col1, .col2, .col3{
+    display: grid;
+    row-gap: 24px;
+    max-width: 500px;
+    grid-auto-rows: min-content;
+    grid-auto-columns: min-content;
+}
+img{
+    object-fit: cover;
+}
+

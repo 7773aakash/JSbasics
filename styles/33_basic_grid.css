@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    max-width: 80%;
+    margin: 3rem auto;
+    gap: 20px;
+    background-color: #2196F3;
+    padding: 20px;
+    grid-template-areas:
+     'img1area img1area img2area img4area'
+     'img3area img5area img5area img5area'
+     'img3area img6area img7area img8area'
+     'img9area img9area img9area img8area';
+}
+
+.grid-container div {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: lightblue;
+    padding: 20px 10px;
+    font-size: 30px;
+    text-align: center;
+
+}
+.pic1{
+    grid-area: img1area;
+}
+.pic2{
+    grid-area: img2area;
+}
+.pic3{
+    grid-area: img3area;
+}
+.pic4{
+    grid-area: img4area;
+}
+.pic5 {
+    grid-area: img5area;
+}
+.pic6{
+    grid-area: img6area;
+}
+.pic7{
+    grid-area: img7area;
+}
+.pic8{
+    grid-area: img8area;
+}
+.pic9{
+    grid-area: img9area;
+}

@@ -28,6 +28,7 @@ boximg.onclick = function () {
     boximg.style.transform = "translate(0,0) scale(1)";
 
     console.log(boximg.style.transform);
+
     boximg.style.border = "none";
     boximg.style.boxShadow = "none";
     setTimeout(function () {
@@ -87,3 +88,4 @@ boximg3.onclick = function () {
         boximg3.style.zIndex = 0;
     })
 }
+
