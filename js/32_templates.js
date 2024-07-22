@@ -7,7 +7,7 @@ var boximg2 = document.getElementsByClassName("boximage2")[0];
 var boximg3 = document.getElementsByClassName("boximage3")[0];
 
 
-lens.onclick = function () {
+lens.onclick = function ( ) {
     var boximgcoords1 = boximg.getBoundingClientRect();
     var translateX1 = 670.664 - boximgcoords1.left;
     var translateY1 = 10 - boximgcoords1.top;

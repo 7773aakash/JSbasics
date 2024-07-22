@@ -10,7 +10,11 @@
     margin: auto;
     text-align: center;
     margin-top: 100px;
+    overflow: hidden;
     
+}
+.slide{
+    display: none;
 }
 img{
     min-width: 700px;
@@ -54,6 +58,6 @@ img{
     background-color: rgba(255, 255, 255, .5);
 }
 
-.indicator:hover{
+.indicator:hover, .currentind{
     background-color: rgba(255, 255, 255,1);
 }
