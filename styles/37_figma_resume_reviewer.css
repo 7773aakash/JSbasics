@@ -1,0 +1,256 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    overflow: scroll;
+}
+
+.main-container {
+    width: 1440px;
+    /* height: 856px; */
+    background-color: #121111;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 1362px;
+    height: 856px;
+    padding: 100px 32px 68px 32px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    left: 39px;
+}
+
+.aboutfree {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    height: 241px;
+    gap: 36px;
+}
+
+.custom-h1 {
+    width: 768px;
+    height: 65px;
+    margin: 0px;
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.support-text {
+    margin: 0px;
+    width: 768px;
+    height: 140px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #EFF1F3;
+    ;
+}
+
+.reasons {
+    max-width: 1298px;
+    max-height: 183px;
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.reasons-content {
+    display: flex;
+    width: 382px;
+    height: 183px;
+    gap: 24px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    width: 382px;
+    height: 183px;
+    gap: 16px;
+}
+
+.empoweringAI {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.styledp {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0px;
+    letter-spacing: 0.012em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.supporting-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0px;
+    width: 988px;
+    height: 56px;
+}
+
+.btn1 {
+    width: 361px;
+    height: 64px;
+    background-color: #F97316;
+    border-radius: 8px;
+
+}
+
+.btn1-span {
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.light-testimonial {
+    box-sizing: border-box;
+    position: relative;
+    width: 1440px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    gap: 50px;
+    padding: 100px 20px 100px 20px;
+    ;
+}
+
+.design-imgs {
+    position: relative;
+    width: 427px;
+}
+
+.design-imgs div {
+    width: 404px;
+    height: 404px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.title {
+    padding: 10px;
+
+}
+
+.rating {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn2 {
+    width: 436px;
+    height: 72px;
+    background-color: #F97316;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    ;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 582px;
+    gap: 48px;
+    padding: 100px 0px 100px 0px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.explore-text {
+    color: #1A1A1A;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 65px;
+    letter-spacing: 0.2px;
+    text-align: center;
+
+}
+
+.frame-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1156px;
+    height: 269px;
+    gap: 36px;
+}
+
+.frame {
+    height: 269px;
+    width: 262px;
+    border: 1px solid #E5E7EB;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* padding:36px; */
+    ;
+}
+
+.hov-imgspan {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #EFF1F3;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.hov-span {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38.4px;
+    letter-spacing: 0.024em;
+    text-align: center;
+    /* color: #F97316 */
+    color: #222222;
+
+}
+
+
+.frame:hover {
+    box-shadow: 4px 4px 30px 0px #0000001A;
+}
+
+.frame:hover .hov-span {
+    color: #F97316;
+}
+
+.frame:hover .hov-imgspan {
+    background: #F97316;
+}
